@@ -1,0 +1,2 @@
+# HealthGenieAI
+A hackathon project
