@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Herbal Garden</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Virtual Herbal Garden Logo">
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#garden">Virtual Garden</a></li>
+                <!-- <li><a href="learning.html">Learning</a></li> New Learning Link -->
+                <!-- <li><a href="#about">About AYUSH</a></li> -->
+                <!-- <li><a href="login.html">Login</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="images/trees.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Welcome to the Virtual Herbal Garden</h1>
+            <p>Explore the world of medicinal plants with our interactive virtual garden.</p>
+            <a href="#garden" class="cta-button">Explore Garden</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="garden" class="section">
+            <h2>Virtual Garden</h2>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search by name...">
+                <select id="use-filter">
+                    <option value="">Filter by Use</option>
+                    <option value="Medicinal">Medicinal</option>
+                    <option value="Aromatic">Aromatic</option>
+                    <!-- Add more uses as options -->
+                </select>
+                
+                <select id="region-filter">
+                    <option value="">Filter by Region</option>
+                    <option value="Tropical">Tropical</option>
+                    <option value="Temperate">Temperate</option>
+                    <!-- Add more regions as options -->
+                </select>
+                
+                <select id="type-filter">
+                    <option value="">Filter by Type</option>
+                    <option value="Herb">Herb</option>
+                    <option value="Shrub">Shrub</option>
+                    <!-- Add more types as options -->
+                </select>
+                
+                <button id="search-btn">Search</button>
+            </div>
+
+            <div class="slider-container">
+                <div class="plant-slider">
+                    <div class="plant-grid">
+                        <!-- Plant cards -->
+                        <!-- <div class="plant-card">
+                            <img src="images/Echinacea.jpg" alt="Echinacea" class="plant-image">
+                            <div class="plant-info">
+                                <h3 class="plant-name">Echinacea</h3>
+                                <p class="plant-description">A North American herb with pink-purple flowers.</p>
+                                <a href="plant-detail.html?id=1" class="view-more">View Details</a>
+                            </div>
+                        </div> -->
+                        <div class="plant-card">
+                            <img src="images/elderberry.jpg" alt="Elderberry" class="plant-image">
+                            <div class="plant-info">
+                                <h3 class="plant-name">Elderberry</h3>
+                                <p class="plant-description">A deciduous shrub with dark purple berries.</p>
+                                <a href="plant-detail.html?id=2" class="view-more">View Details</a>
+                            </div>
+                        </div>
+                        <div class="plant-card">
+                            <img src="images/astragalus.jpg" alt="Astragalus" class="plant-image">
+                            <div class="plant-info">
+                                <h3 class="plant-name">Astragalus</h3>
+                                <p class="plant-description">A leguminous herb with a long history in Chinese medicine.</p>
+                                <a href="plant-detail.html?id=3" class="view-more">View Details</a>
+                            </div>
+                        </div>
+                        <div class="plant-card">
+                            <img src="images/turmeric.jpg" alt="Turmeric" class="plant-image">
+                            <div class="plant-info">
+                                <h3 class="plant-name">Turmeric</h3>
+                                <p class="plant-description">A tropical rhizome with bright yellow flesh.</p>
+                                <a href="plant-detail.html?id=4" class="view-more">View Details</a>
+                            </div>
+                        </div>
+                        <div class="plant-card">
+                            <img src="images/ginger.jpg" alt="Ginger" class="plant-image">
+                            <div class="plant-info">
+                                <h3 class="plant-name">Ginger</h3>
+                                <p class="plant-description">A spicy, aromatic rhizome used for digestive and anti-inflammatory benefits.</p>
+                                <a href="plant-detail.html?id=5" class="view-more">View Details</a>
+                            </div>
+                        </div>
+                        <div class="plant-card">
+                            <img src="images/garlic.jpg" alt="Garlic" class="plant-image">
+                            <div class="plant-info">
+                                <h3 class="plant-name">Garlic</h3>
+                                <p class="plant-description">A bulbous plant known for its strong flavor.</p>
+                                <a href="plant-detail.html?id=6" class="view-more">View Details</a>
+                            </div>
+                        </div>
+                        <div class="plant-card">
+                            <img src="images/Andrographis.jpg" alt="Andrographis" class="plant-image">
+                            <div class="plant-info">
+                                <h3 class="plant-name">Andrographis</h3>
+                                <p class="plant-description">An herb with green leaves and white flowers.</p>
+                                <a href="plant-detail.html?id=7" class="view-more">View Details</a>
+                            </div>
+                        </div>
+                        <div class="plant-card">
+                            <img src="images/aloe vera.jpg" alt="Aloe Vera" class="plant-image">
+                            <div class="plant-info">
+                                <h3 class="plant-name">Aloe Vera</h3>
+                                <p class="plant-description">fleshy leaves that contain a gel with hydrating and healing properties.</p>
+                                <a href="plant-detail.html?id=8" class="view-more">View Details</a>
+                            </div>
+                        </div>
+                        <div class="plant-card">
+                            <img src="images/chamomile.jpg" alt="Chamomile" class="plant-image">
+                            <div class="plant-info">
+                                <h3 class="plant-name">Chamomile</h3>
+                                <p class="plant-description">Features small daisy-like flowers with soothing properties.</p>
+                                <a href="plant-detail.html?id=9" class="view-more">View Details</a>
+                            </div>
+                        </div>
+                        <div class="plant-card">
+                            <img src="images/tea tree.jpg" alt="Tea Tree" class="plant-image">
+                            <div class="plant-info">
+                                <h3 class="plant-name">Tea Tree</h3>
+                                <p class="plant-description">Produces essential oil with powerful antimicrobial properties.</p>
+                                <a href="plant-detail.html?id=10" class="view-more">View Details</a>
+                            </div>
+                        </div>
+                        <!-- Additional plant cards here -->
+                    </div>
+                </div>
+                <button class="prev-btn">&lt;</button>
+                <button class="next-btn">&gt;</button>
+            </div>
+        </section>
+
+
+<!-- Guided Virtual Tours Section -->
+<section id="guided-tours">
+    <h2>Guided Virtual Tours</h2>
+    <div class="tour-container">
+        <div class="tour-card">
+            <img src="images/digestive-health-image.jpg" alt="Plants for Digestive Health" class="tour-image">
+            <div class="tour-content">
+                <h3><a href="guided-tour\digestive-health.html">Plants for Digestive Health</a></h3>
+                <p>Explore the herbs and plants that support digestive health.</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="images/immunity-image.jpeg" alt="Plants for Immunity" class="tour-image">
+            <div class="tour-content">
+                <h3><a href="guided-tour/immunity.html">Plants for Immunity</a></h3>
+                <p>Discover the plants that boost and strengthen your immune system.</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="images/skin-care-image.jpg" alt="Plants for Skin Care" class="tour-image">
+            <div class="tour-content">
+                <h3><a href="guided-tour/skin-care.html">Plants for Skin Care</a></h3>
+                <p>Find out which plants can help maintain healthy and radiant skin.</p>
+            </div>
+        </div>
+        <!-- Add more tours as needed -->
+    </div>
+</section>
+    </main>
+
+
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/d40da81c-2bd3-4e1a-a4df-692e25d4109f/webchat/v2.1/config.js"></script>
+
+    <!-- Bot Icon -->
+    <!-- <div id="bot-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" alt="Chatbot Icon">
+    </div> -->
+
+    <!-- Botpress Webchat Integration -->
+    <div id="botpress-webchat"></div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="js/bot.js"></script>
+    
+    <!-- Botpress Webchat script -->
+    <script src="http://your-botpress-server.com/assets/modules/channel-web/webchat.js"></script>
+
+
+    <footer>
+        <p>&copy; 2024 Virtual Herbal Garden by HealthGenie. All rights reserved.</p>
+    </footer>
+    <script src="js/search-filter.js"></script>
+    <script src="js/slider.js"></script>
+
+
+</body>
+</html>
